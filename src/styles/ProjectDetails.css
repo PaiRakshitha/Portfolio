@@ -1,0 +1,132 @@
+.project-details {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e0e0e0 100%);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-in-out;
+  text-align: justify; /* Justify all text content */
+}
+
+.project-details h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+  animation: slideInFromLeft 0.6s ease-out;
+}
+
+.project-details p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  text-align: justify; /* Justify paragraphs */
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.project-details h3 {
+  font-size: 1.7rem;
+  color: #1c1c1d;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  animation: slideInFromRight 0.6s ease-out;
+}
+
+.project-details ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  color: #333;
+  padding-left: 20px;
+  text-align: justify; /* Justify list content */
+}
+
+.project-details ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: row; /* Change to row to display images side by side */
+  justify-content: space-between; /* Space between the images */
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center; /* Center image captions */
+}
+
+.image-section {
+  text-align: center; /* Center each image and its caption */
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-section img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.image-section p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  text-align: center; /* Center the figure descriptions */
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

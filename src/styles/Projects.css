@@ -1,0 +1,79 @@
+/* Container for projects */
+.projects {
+  padding: 2rem 1rem;
+  background-color: #e8f5e9;
+  border-radius: 15px;
+  margin: 1.5rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  animation: zoomIn 1s ease-in-out;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* Title styling with subtle color gradient and text shadow */
+.projects h3 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #333;
+  text-align: center;
+  background: linear-gradient(90deg, #153216, #81c784);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInText 2s ease forwards;
+}
+
+/* Individual project container with hover effects */
+.project {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles with color transition */
+.details-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.1);
+}
+
+/* Zoom in animation for project elements */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for text */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
